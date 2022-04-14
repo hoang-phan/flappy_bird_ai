@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flappy Bird</title>
+</head>
+<body style="margin: 0">
+  <div id='scene' style="background: url('scene.png'); background-repeat: repeat-x; width: 300px; height: 600px; position: relative; overflow: hidden;">
+    <div class="pipe" style="position: absolute; width: 62px; height: 530px; overflow: hidden; top: 0">
+      <div class="pipe-components" style="position: relative; left: 0; width: 62px; height: 1000px">
+        <div class='pipe-body' style="background: url('pipe-body.png'); background-repeat: repeat-y; width: 62px; height: 500px; position: absolute;"></div>
+        <img class='pipe-bottom' src='pipe-top.png' style="position: absolute; transform: scale(1, -1); top: 500px" />
+        <img class='pipe-top' src='pipe-top.png' style="position: absolute; top: 800px" />
+        <div class='pipe-body' style="background: url('pipe-body.png'); background-repeat: repeat-y; width: 62px; height: 500px; position: absolute; top: 846px"></div>
+      </div>
+    </div>
+    <div class="pipe" style="position: absolute; width: 62px; height: 530px; overflow: hidden; top: 0">
+      <div class="pipe-components" style="position: relative; left: 0; width: 62px; height: 1000px">
+        <div class='pipe-body' style="background: url('pipe-body.png'); background-repeat: repeat-y; width: 62px; height: 500px; position: absolute;"></div>
+        <img class='pipe-bottom' src='pipe-top.png' style="position: absolute; transform: scale(1, -1); top: 500px" />
+        <img class='pipe-top' src='pipe-top.png' style="position: absolute; top: 800px" />
+        <div class='pipe-body' style="background: url('pipe-body.png'); background-repeat: repeat-y; width: 62px; height: 500px; position: absolute; top: 846px"></div>
+      </div>
+    </div>
+  </div>
+  <div id='game-point' style="position: absolute; left: 0; top: 50px; width: 300px; text-align: center; font-size: 50px; font-weight: bolder; color: white">0</div>
+  <div id='birds-layer'></div>
+  <div id='game-end' style="position: absolute; left: 0; top: 0; width: 300px; height: 600px; display: none; background: rgba(0, 0, 0, 0.5)">
+    <div style="position: absolute; left: 0; top: 150px; width: 300px; text-align: center; font-size: 25px; font-weight: bold; color: white">TAP TO CONTINUE</div>
+  </div>
+  <script src="learner.js"></script>
+  <script src="bird.js"></script>
+  <script src="pipe.js"></script>
+  <script src="scene.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>
