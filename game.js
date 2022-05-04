@@ -99,7 +99,7 @@ document.addEventListener('click', function() {
 });
 
 var gamePoint = function() {
-  return 140 - scene.x > 300 ? Math.floor(((140 - scene.x) + 300) / 200) : 0;
+  return 140 - scene.x > 300 ? Math.floor(((140 - scene.x) - 100) / 200) : 0;
 }
 
 var update = function() {
